@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+board{
+    margin-bottom: 100px;
+    margin: auto;
+}
+table{
+    border-spacing: 0px;
+}
+
+#smiley{
+    
+    margin-left:700px;
+    margin-right:300px;
+}
+
+table, th, td {
+border: 0.3px solid black; 
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}
+
+.flag{
+    background: url("flag.png") no-repeat center center;
+}
+
+.bomb{
+    background: url("bomb.png") no-repeat center center;
+}
+.zero {
+    background: url("0.png") no-repeat center center;
+}
+
+.one {
+    background: url("1.png") no-repeat center center;
+}
+
+.two {
+    background: url("2.png") no-repeat center center;
+}
+
+.three {
+    background: url("3.png") no-repeat center center;
+}
+
+.four {
+    background: url("4.png") no-repeat center center;
+}
+
+.five {
+    background: url("5.png") no-repeat center center;
+}
+
+.six {
+    background: url("6.png") no-repeat center center;
+}
+
+.seven {
+    background: url("7.png") no-repeat center center;
+}
+
+.eight {
+    background: url("8.png") no-repeat center center;
+}
+
+.closed {
+    background: url("closed.png") no-repeat center center;
+}
+#numFlags{
+    color: white;
+}
+
+@font-face {
+    font-family: "Digital Dismay";
+    src: url("./digital-dismay.otf") format("truetype");
+}
+
+#timer{
+    font-family: 'Digital Dismay';
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 4px 4px 0 7px;
+    line-height: 1em;
+}
+
