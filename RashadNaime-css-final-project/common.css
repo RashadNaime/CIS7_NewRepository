@@ -1,0 +1,408 @@
+/* Common Styles for all pages of Whatever Hotel Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by _______________________ <----  YOUR NAME HERE */
+
+
+
+/* First rule below should probably be left alone. */
+
+header,
+nav,
+section,
+footer,
+article {
+    /* leave this alone */
+    display: block;
+}
+
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	               But note that you will lose points for any of the above properties that are not set for the body  */
+
+
+/*The Font style is set to "Triforce" by Jackster Productions downloaded off of fontspace:  https://www.fontspace.com/category/legend-of-zelda */
+/*The Download for the font style is also included inside the final project folder as Triforce*/
+body {
+    margin: 5% 10% 0 10%;
+    padding-left: 50px;
+    background-color: #0D9263;
+    color: #D4CE46;
+    font-family: "Triforce";
+    font-size: 150%;
+    border-style: outset;
+    border-color: #494B4A;
+}
+
+/* 2. Header (Banner) Styles: For the top header area (which includes the h1) and should be treated as a banner area. 
+   =========================  Possible properties to use here include "background", "height", "padding", "margin",     
+                              and "border".  Feel free to use others instead. Use at least 2 properties.           */
+
+/*There are 2 logos, one is the banner within header, and the other is the hotel zelda symbol which is inside the position me as HotelZeldaLogo2.png*/
+/*The second logo sits on top of the banner logo on the top right side*/
+header {
+    background-image: url("LegendofZeldaHotelLogo.jpg");
+    height: 100%;
+    width: 95%;
+    border-style: outset;
+    border-color: #0D5235;
+    font-size: 200%;
+}
+
+
+/* 3. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                  Use text-shadowing on your headings. One of your heading fonts must be an embedded Web font.  */
+h1,
+h2,
+h3 {
+    font-family: "Triforce";
+    color: #4ABB90;
+    text-shadow: 2px 3px 4px #000000;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 112.5%;
+}
+
+/*Setting faqpage h1 header to 270% because it collides with the logo if its too big, this is the only header adjustment needed*/
+#faqpage header h1{
+    font-size: 270%;
+
+}
+
+
+
+
+
+/* 4. Intro Paragraph Styles:  use at least 1 property to emphasize 1st paragraph (intro article) 
+   =========================   */
+#intro {
+    background-color: #0F5135;
+    width: 80%;
+    border: 15px solid #D4CE46;
+    padding: 30px;
+    margin: 10px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #D4CE46;
+}
+
+
+
+
+
+/* 5. Copyright Styles:  use at least 2 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+
+footer {
+    color: lightgray;
+    opacity: 0.5;
+    margin-bottom: 0px;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: lightgray;
+    font-size: 80%;
+}
+
+footer p {
+    display: inline;
+}
+
+
+
+
+
+/* 6. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+
+/*All colors selected were picked from the website logo using https://imagecolorpicker.com/ to get the color values from the logo*/
+
+a:link {
+    color: #383EBB;
+    text-decoration: overline underline;
+}
+
+a:visited {
+    color: #21BB72;
+    text-decoration: overline underline;
+}
+
+a:hover {
+    color: #850E38;
+    text-decoration: overline underline;
+}
+
+a:active {
+    color: #EA8916;
+    text-decoration: overline underline;
+}
+
+/* 7. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */
+
+/*All colors selected were picked from the website logo using https://imagecolorpicker.com/ to get the color values from the banner, and Hotel Zelda color scheme*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: .5px solid #D5CD46;
+    width: 95.2%;
+    background-color: #494B4A;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+nav li a {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: #D5CD46;
+}
+
+nav a:active {
+    color: #D5CD46;
+    background-color: #D5CD46;
+}
+
+#homepage #homelink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #EA8916;
+    font-size: 200%;
+}
+
+#servicespage #serviceslink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #446085;
+    font-size: 200%;
+}
+
+#reservationspage #reservationslink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #850E38;
+    font-size: 200%;
+}
+
+#contactpage #contactlink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #21BB72;
+    font-size: 200%;
+}
+
+#faqpage #faqlink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #383EBB;
+    font-size: 200%;
+}
+
+#contactpage #contactlink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #21BB72;
+    font-size: 200%;
+}
+
+#eventspage #eventslink {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #8E2D62;
+    font-size: 200%;
+}
+
+/*These are for setting the text decoration to underline when its an active link, and to set the color of the links to the colors of the banners, in navigation unique to each link*/
+
+#homelink {
+    color: #EA8916;
+    text-decoration: underline;
+    text-decoration-color: #EA8916;
+}
+
+#serviceslink {
+    color: #446085;
+    text-decoration: underline;
+    text-decoration-color: #446085;
+}
+
+#reservationslink {
+    color: #850E38;
+    text-decoration: underline;
+    text-decoration-color: #850E38;
+}
+
+#contactlink {
+    color: #21BB72;
+    text-decoration: underline;
+    text-decoration-color: #21BB72;
+}
+
+#faqlink {
+    color: #383EBB;
+    text-decoration: underline;
+    text-decoration-color: #383EBB;
+}
+
+#eventslink {
+    color: #8E2D62;
+    text-decoration: underline;
+    text-decoration-color: #8E2D62;
+}
+
+
+
+/* 8. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+
+/*Both Rupee images were photoshopped by Rashad Naime out of the rupee poster image found on pintrest*/
+
+#main ul {
+    list-style: square inside url("redrupee2.png");
+}
+
+#main ul ul li {
+    list-style: square inside url("bluerupee2.png");
+}
+
+
+
+
+/* 9. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                       itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+
+#testimonials {
+    margin-top: 5%;
+    border: 1px solid;
+    border-color: #0F5135;
+    background-color: #494B4A;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.testimonial {
+    border-color: #D4CE46;
+    border-style: ridge;
+
+}
+
+.quote {
+    margin-left: 2%;
+    font-size: 150%;
+
+}
+
+.speaker {
+    opacity: 0.5;
+    margin-left: 1%;
+    font-size: 80%;
+    color: #B55713;
+}
+
+
+
+
+/* 10. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ===========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, position absolutely */
+
+#positionme{
+    background-image: url(HotelZeldaLogo2.png);
+    width: 320px;
+    height: 240px;
+    position:absolute;
+    top: 60px;
+    right: 17.2%;
+}
+
+
+
+
+/* 11. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                               For some partial credit here you can use just the layout styles from A3P5              */
+
+body{
+    background-image: url(HotelZeldaBodyBg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#pagewrap{
+    background: #0D9263;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#main{
+    clear:left;
+    margin-top: 1em;
+    margin-bottom: 15%;
+    padding-right: 26%;
+}
+
+#testimonials{
+    position: absolute;
+    top: 370px;
+    right: 20px;
+    width: 25%;
+}
+
+nav{
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+/*Some of the pages bottoms dont match, they are either too far down, or the testimonials side column extends past the copyright bar*/
+/*This css specfically sets the margins with the pages that have this issue for the multi column layout*/
+#reservationspage #main{
+    margin-bottom: 30%;
+}
+
+#servicespage #main{
+    margin-bottom: 1%;
+}
+
+#contactpage #main{
+    margin-bottom: 1%;
+}
+
+#faqpage #main{
+    margin-bottom: 19%;
+}
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */
