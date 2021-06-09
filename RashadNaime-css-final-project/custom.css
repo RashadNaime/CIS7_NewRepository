@@ -1,0 +1,148 @@
+/* Custom Styles For Whatever Hotel */
+/* Styles in this stylesheet target items that occur only on one specific page. */
+
+/* CSS Final Project by _______________________ <----  YOUR NAME HERE */
+
+
+/* First 3 table rules below should probably be left alone, but some values can be adjusted as needed. */
+
+table#calendar {
+    width: 98%;
+    /* change this table width as needed  */
+    margin-left: auto;
+    /* auto left and right margins centers the table since it has a width */
+    margin-right: auto;
+    border-collapse: collapse;
+    /* leave this alone unless you want the effect of cellspacing then change to "separate" */
+    border-spacing: 0px;
+    /* leave this alone unless you want the effect of cellspacing then change to what you want */
+}
+
+table#calendar td,
+table#calendar th {
+    border: 1px solid;
+    /*  put a border around each table cell. You can change this if you like */
+
+    width: 14%;
+    /*  7 days a week, so 7 * 14% = 98%  Either leave this alone or tweak only slightly     */
+    padding: 0;
+    /*  adjust as needed to get more spacing inside events table cells (the effect of "cellpadding") */
+}
+
+table#calendar td {
+    height: 4.75em;
+    /*  change this height for the calendar days as needed */
+    vertical-align: top;
+    /* keeps text vertically aligned to the top of the cell (default is center)     */
+}
+
+
+/* 1. Events Page Calendar Styles: Create 5 or more calendar table related rules. These should not affect other tables!    
+   ==============================  5 required areas to style: table heading, weekdays, date #'s, empty days, & events.      
+                                   You can style the table itself too. Consider using backgrounds on some of these areas. */
+
+table#calendar th {
+    background-image: url(HotelZeldaBodyBg.jpg);
+    background-position: center;
+    color: #FEAB0B;
+    height: 15%;
+    font-size: 200%;
+}
+
+table#calendar {
+    background-image: url(calenderbg.png);
+    background-position: center;
+    height: 15%;
+    color: #FEAB0B;
+}
+.date{
+    font-size: 150%;
+    color: 	#FEAB0B;
+}
+.event{
+    color: #D4CE46;
+    font-size: 110%;
+}
+
+
+/* 2. FAQ Page Question & Answer Styles: Style questions differently from answers so questions are easier to find,    
+   ====================================  question and answer pairs are grouped closer together vertically,          
+                                         and as a result the whole section is more visually pleasing.               */
+
+.question{
+    font-size: 180%;
+    margin-bottom: 0px;
+}
+.answer{
+    color: #EA8916;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 90%;
+}
+
+
+/* 3. Services Page Image Styles: Use each figures' id to float left/right & give margin on the inner side to keep text away.       
+   =============================  Use images' class to give common border properties (use a border style other than "solid").   
+                                  Also set common text styling for the figcaptions, perhaps including center aligning.       */
+#roomservicefig {
+    float: right;
+    margin-left: 5%;
+}
+
+#roomservicepic {
+    width: 100%;
+    height: 100%;
+}
+
+#spafig {
+    float: left;
+    margin-right: 5%;
+}
+
+#spapic {
+    width: 100%;
+    height: 100%;
+}
+
+.servicefig {
+    border: dashed;
+    border-color: #0F5135;
+    width: 30%;
+    height: 30%;
+    border-width: 3px;
+    box-shadow: 4px 4px 6px black;
+    margin-bottom: 5%;
+}
+
+
+#spafig figcaption {
+    margin-left: 35%;
+    color: #EA8916;
+}
+
+#roomservicefig figcaption {
+    margin-left: 35%;
+    color: #EA8916;
+}
+
+
+
+
+/* Miscellaneous Styles: For any other styles for a single page that does not fit the above categories.  
+   ====================  Use only as needed. This section is optional and does not count for any points.    */
+
+/*Setting the size for the hotelpicture to scale properly on page*/
+
+#hotelpic {
+    border: dashed;
+    border-color: #0F5135;
+    border-width: 3px;
+    width: 30%;
+    height: 30%;
+    box-shadow: 4px 4px 6px black;
+}
+
+#hotelfig figcaption {
+    margin-left: 8%;
+    color: #EA8916;
+}
