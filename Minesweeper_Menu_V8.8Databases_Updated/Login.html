@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Menu.css">
+        <script type="text/javascript" src="cookieFunctions.js"></script>
+    </head>
+    <body>
+        <img src="Loginlogo2.png" id="Loginlogo" alt="LoginLogo" style="width:1020px;height:172px;">
+        <form id="login" name="login" METHOD=GET action="Menu.html" onsubmit="return demoMatchClick();">
+            <P class="regexpress"><INPUT TYPE="hidden" NAME="regex" VALUE="^(?=.{3,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" SIZE=50></P>  
+            <P class="regexpress"><INPUT TYPE="hidden" NAME="regexP" VALUE="^([a-zA-Z0-9@*#]{8,15})$" SIZE=50></P>  
+            <p class="inputs">Username: <input type="text" id="username" name="username"></p>
+            <p class="inputs">Password: <input type="password" id="password" name="password" minlength="8" required></p>
+            <p class="inputs" id="submitbutton"><button type="submit" class="button"><span>Login</span></button></p>
+        </form>
+        
+        <script>
+            function demoMatchClick() {
+                //Create a variable for every regular expression being tested
+              var user = new RegExp(document.login.regex.value); //this is the tester for regular expressions
+              if (document.login.username.value.match(user)) {
+                alert("Successful match username"); //alert if the regular expression matched correctly for each input
+                //alert(document.login.username.value.match(user))
+                    var name = document.getElementById("username").value;
+                    //Set the cookie for player name to be set into database
+                    var ncookie = JSON.stringify(name);
+                    setCookie("playername",ncookie,1)
+                    //checkCookie("playername"); 
+              } else {
+                //alert(document.login.username.value.match(user))
+                alert("No match username"); //else alert the match was not made, and for which input.
+                window.location.reload(true);
+              }
+              var pass = new RegExp(document.login.regexP.value); 
+              if (document.login.password.value.match(pass)) {
+                alert("Successful match password"); 
+                //alert(document.login.password.value.match(pass))
+              } else {
+                //alert(document.login.password.value.match(pass))
+                alert("No match password"); 
+              }
+              if(document.login.username.value.match(user) && document.login.password.value.match(pass)){
+                    alert("validations passed");
+                    return true;
+              }
+              else{
+                      alert("validation failed false");
+                      return false;
+                      alert("Username or Password are incorrect");
+              }
+            }
+            function storeName(){
+                    var name = document.getElementById("username").value;
+                    var ncookie = JSON.stringify(name); 
+                    setCookie("playername",name,1);
+                    alert(name); 
+                    checkCookie("username");
+                }
+        </script>
+    </body>
+</html>

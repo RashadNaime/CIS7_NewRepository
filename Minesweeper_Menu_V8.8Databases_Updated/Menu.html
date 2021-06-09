@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Menu.css">
+    </head>
+    <body>
+        <img src="MinesweeperLogo.jpg" id="logo" alt="Title" style="width:500px;height:400px;">
+        <p id="difficulty">
+        <button class ="button" onclick="window.location.href = 'MinesweeperPreset.html?row=10&column=10&bombs=15&Submit=Submit';">
+            <span>Beginner</span>
+        </button> <br>
+        
+        <button class ="button" onclick="window.location.href = 'MinesweeperPreset.html?row=16&column=16&bombs=40&Submit=Submit';">
+            <span>Intermediate</span>
+        </button> <br>       
+        
+        <button class ="button" onclick="window.location.href = 'MinesweeperPreset.html?row=16&column=30&bombs=99&Submit=Submit';">
+            <span>Advanced</span>
+        </button>
+        
+        <button class ="button" onclick="window.location.href = 'MinesweeperCustomInput.html';">
+            <span>Custom</span>
+        </button>
+        </p>
+           
+    </body>
+</html>
