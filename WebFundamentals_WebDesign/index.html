@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Belt Exam Attempt 1 Rashad Naime</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--Container for entire page-->
+    <div id="pageContainer">
+        <!--Navbar at the top contains title with search bar, and list of links for products-->
+        <div id="navBar">
+            <div id="topNav">
+                <img id="leafIcon" src="assets/leaf.png" alt="LeafSymbol">
+                <h1>EasyBay</h1>
+                <input id="searchBar" type="text" placeholder=" Search for anything">
+                <p>Sign In</p>
+                <img src="assets/cart-dark.png" alt="ShoppingCart" onclick="cartAlert()">
+            </div>
+            <ul class="bottomNavLinks">
+                <li><a href="#">Aeonium</a></li>
+                <li><a href="#" class="active">Andormischus</a></li>
+                <li><a href="#">Agave</a></li>
+                <li><a href="#">Aloe</a></li>
+                <li><a href="#">Anacampseros</a></li>
+                <li><a href="#">Aristaloe</a></li>
+                <li><a href="#">More ...</a></li>
+            </ul>
+        </div>
+        <!--Set h1 between nav and middlePage div-->
+        <h1>Your Source for Serious Succulent Specialties</h1>
+        <!--middlePage div flexes the left and right columns together-->
+        <div id="middlePage">
+            <!--middlePage split between left and right-->
+            <div class="middleLeftBlock">
+                <div id="leftText">
+                    <p>Discover Succ-<br>ulent varieties one pot or rack at a time!<br><br></p>
+                    <div id="alignLeftText">
+                        <p>Discover</p>
+                        <img src="assets/arrow-light.png" alt="RightArrow">
+                    </div>
+                </div>
+                <img id="mainImage" src="assets/succulents-1.jpg" alt="succulentPic1" onmouseover="changeImage()" onmouseout="revertImage()">
+            </div>
+            <!--middlePage split between left and right-->
+            <div class="middleRightBlock">
+                <img src="assets/aloe-m.jpg" alt="aloeFlower">
+                <div id="alignRightText">
+                    <p>Soothing Aloe</p>
+                    <img src="assets/arrow-light.png" alt="RightArrow">
+                </div>
+            </div>
+        </div>
+        <!--bottom page div contains the pictues aligned with text-->
+        <div id="bottomPage">
+            <div class="bottomImages">
+                <img src="assets/aeonium-s.jpg" alt="aeoniumSmall">
+                <p>Aeonium</p>
+            </div>
+            <div class="bottomImages">
+                <img src="assets/aloe-s.jpg" alt="aloeSmall">
+                <p>Aloe</p>
+            </div>
+            <div class="bottomImages">
+                <img src="assets/cactus-s.jpg" alt="cactusSmall">
+                <p>Cactus</p>
+            </div>
+            <div class="bottomImages">
+                <img src="assets/echeveria-s.jpg" alt="echeveriaSmall">
+                <p>Echeveria</p>
+            </div>
+            <div class="bottomImages">
+                <img src="assets/sedum-s.jpg" alt="sedumSmall">
+                <p>Sedum</p>
+            </div>
+            <div class="bottomImages">
+                <img src="assets/sempervivum-s.jpg" alt="sempervivumSmall">
+                <p>Sempervivum</p>
+            </div>
+        </div>
+        <!--cookieBar displays cookies message with positioning at bottom of page-->
+        <div id="cookieBar">
+            <img src="assets/alert-dark.png" alt="alertCookie">
+            <p>This site makes use of third party cookies, by clicking "I accept" <br> You agree to the terms outlined in our <a href="#">Cookie Policy</a>
+            </p>
+            <button class="cookieBtn" onclick="removeCookies()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

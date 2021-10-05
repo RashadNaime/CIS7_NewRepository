@@ -1,0 +1,249 @@
+/*------------------- Start the page, and set size of page container --------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+#pageContainer {
+    width: 1200px;
+    min-height: 600px;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*------------------------Nav Bar display with links-------------------------------*/
+
+#navBar {
+    width: 1200px;
+    height: 130px;
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+/*------------------------Top Div within navbar contains icons, title, search bar, and cart-------------------------------*/
+#topNav {
+    width: 1180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#topNav > h1 {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#searchBar {
+    width: 700px;
+    height: 35px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-image: url("assets/search-dark.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafIcon {
+    background-color: #13CDB1;
+}
+
+/*------------------------Bottom of nav bar displays all the link options-------------------------------*/
+.bottomNavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 20px;
+    width: 1200px;
+    height: 40px;
+}
+
+.bottomNavLinks li {
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.bottomNavLinks li a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.bottomNavLinks li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------------H1 tag below navbar and above middle page contents-------------------------------*/
+#pageContainer > h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+/*------------------------ Middle Page contents -------------------------------------------------------------*/
+#middlePage {
+    width: 1180px;
+    height: 380px;
+    display: flex;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*-------------------------Left block of middle page div---------------------------------------------------------*/
+.middleLeftBlock {
+    width: 60%;
+    height: 370px;
+    display: flex;
+    vertical-align: top;
+}
+
+#leftText {
+    width: 275px;
+    height: 300px;
+    padding: 30px 30px;
+    background-color: #13CDB1;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#alignLeftText {
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+}
+
+.middleLeftBlock > p {
+    width: 275px;
+    height: 300px;
+    padding: 30px 30px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.middleLeftBlock > p > img {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.middleLeftBlock > img {
+    height: 360px;
+    width: 373px;
+}
+
+/*---------------------------Right block of middle page div--------------------------------------------------------*/
+.middleRightBlock {
+    width: 40%;
+    height: 360px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+.middleRightBlock > img {
+    display: block;
+    width: 447px;
+    height: 230px;
+}
+
+
+
+#alignRightText {
+    margin-top: 30px;
+    height: 100px;
+    width: 387px;
+    padding-left: 50px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #13CDB1;
+    font-size: 40px;
+    color: white;
+}
+
+#alignRightText > img {
+    margin-left: 10px;
+}
+
+/*-----------------------------Bottom div that contains pictures of plants--------------------------------------------*/
+#bottomPage {
+    width: 1160px;
+    height: 250px;
+    display: flex;
+    background-color: #C3DFD8;
+    padding: 20px 20px;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.bottomImages {
+    width: 175px;
+    height: 210px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.bottomImages > img {
+    height: 155px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*----------------------------Bottom cookie Bar--------------------------------------------------------------------------*/
+#cookieBar {
+    width: 1153px;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+}
+
+#cookieBar > p {
+    font-size: 23px;
+    padding-left: 40px;
+}
+
+.cookieBtn {
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid black;
+    width: 130px;
+    height: 40px;
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: #13CDB1;
+    box-shadow: 5px 5px black;
+    margin-left: 250px;
+    color: white;
+}
+
+.cookieBtn:active {
+    transform: translateY(4px);
+}
